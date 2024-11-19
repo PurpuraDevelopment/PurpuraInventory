@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "title": "Purpura Inventario"
+  },
+  "dashboard": {
+    "title": "Panel de Control",
+    "addProduct": "Agregar Producto",
+    "stats": {
+      "totalProducts": "Total de Productos",
+      "inStock": "En Stock",
+      "lowStock": "Stock Bajo",
+      "totalValue": "Valor Total",
+      "fromLastMonth": "+{number} desde el mes pasado",
+      "ofTotal": "{percent}% del total de productos",
+      "needsAttention": "Necesita atención",
+      "currentValue": "Valor actual del inventario"
+    }
+  },
+  "products": {
+    "table": {
+      "name": "Nombre",
+      "sku": "SKU",
+      "quantity": "Cantidad",
+      "price": "Precio",
+      "status": "Estado",
+      "actions": "Acciones"
+    },
+    "status": {
+      "inStock": "En Stock",
+      "lowStock": "Stock Bajo"
+    }
+  },
+  "addProduct": {
+    "title": "Agregar Producto",
+    "description": "Agrega un nuevo producto a tu inventario. Haz clic en guardar cuando hayas terminado.",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Nombre del producto",
+      "sku": "SKU",
+      "skuPlaceholder": "Código de producto",
+      "quantity": "Cantidad",
+      "price": "Precio",
+      "save": "Guardar Producto"
+    }
+  }
+}

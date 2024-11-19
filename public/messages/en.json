@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "title": "Purpura Inventory"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "addProduct": "Add Product",
+    "stats": {
+      "totalProducts": "Total Products",
+      "inStock": "In Stock",
+      "lowStock": "Low Stock",
+      "totalValue": "Total Value",
+      "fromLastMonth": "+{number} from last month",
+      "ofTotal": "{percent}% of total products",
+      "needsAttention": "Needs attention",
+      "currentValue": "Current inventory value"
+    }
+  },
+  "products": {
+    "table": {
+      "name": "Name",
+      "sku": "SKU",
+      "quantity": "Quantity",
+      "price": "Price",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "inStock": "In Stock",
+      "lowStock": "Low Stock"
+    }
+  },
+  "addProduct": {
+    "title": "Add Product",
+    "description": "Add a new product to your inventory. Click save when you're done.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Product name",
+      "sku": "SKU",
+      "skuPlaceholder": "Stock keeping unit",
+      "quantity": "Quantity",
+      "price": "Price",
+      "save": "Save Product"
+    }
+  }
+}
