@@ -2,7 +2,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Si deseas hacer una exportación estática, descomenta la línea:
-  // output: 'export',
+  output: 'export',
 
   eslint: {
     ignoreDuringBuilds: true,  // Ignora los errores de ESLint durante el proceso de construcción
