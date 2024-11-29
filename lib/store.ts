@@ -6,7 +6,7 @@ export interface Product {
   sku: string;
   quantity: number;
   price: number;
-  status: 'In Stock' | 'Low Stock';
+  status: 'En Stock' | 'Stock Bajo';
 }
 
 interface ProductStore {
@@ -20,11 +20,11 @@ export const useProductStore = create<ProductStore>((set) => ({
   products: [
     {
       id: 1,
-      name: "Laptop Pro X1",
-      sku: "LAP-001",
+      name: "Iphone 16 Pro Max",
+      sku: "APPLE-16PM",
       quantity: 5,
       price: 999.99,
-      status: "In Stock",
+      status: "En Stock",
     },
     {
       id: 2,
@@ -32,7 +32,7 @@ export const useProductStore = create<ProductStore>((set) => ({
       sku: "MOU-002",
       quantity: 2,
       price: 29.99,
-      status: "Low Stock",
+      status: "Stock Bajo",
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ export const useProductStore = create<ProductStore>((set) => ({
       sku: "MON-003",
       quantity: 8,
       price: 399.99,
-      status: "In Stock",
+      status: "En Stock",
     },
   ],
   addProduct: (product) =>
@@ -50,7 +50,7 @@ export const useProductStore = create<ProductStore>((set) => ({
         {
           ...product,
           id: Math.max(0, ...state.products.map((p) => p.id)) + 1,
-          status: product.quantity <= 3 ? 'Low Stock' : 'In Stock',
+          status: product.quantity <= 3 ? 'Stock Bajo' : 'En Stock',
         },
       ],
     })),
@@ -68,8 +68,8 @@ export const useProductStore = create<ProductStore>((set) => ({
               status:
                 'quantity' in updatedProduct
                   ? updatedProduct.quantity! <= 3
-                    ? 'Low Stock'
-                    : 'In Stock'
+                    ? 'Stock Bajo'
+                    : 'En Stock'
                   : p.status,
             }
           : p

@@ -36,7 +36,7 @@ export default function AddProductDialog({
       toast({
         variant: "destructive",
         title: "Error",
-        description: "Please fill in all fields",
+        description: "Completa todas las celdas",
       });
       return;
     }
@@ -57,7 +57,7 @@ export default function AddProductDialog({
 
     toast({
       title: "Success",
-      description: "Product added successfully",
+      description: "Producto agregado exitosamente",
     });
 
     setOpen(false);
@@ -68,19 +68,19 @@ export default function AddProductDialog({
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Add Product</DialogTitle>
+          <DialogTitle>Agregar Producto</DialogTitle>
           <DialogDescription>
-            Please fill out the form below to add a new product.
+          Por favor, rellene el formulario a continuación para agregar un nuevo producto.
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="name" className="text-right">
-              Product Name
+              Nombre de Producto
             </Label>
             <Input
               id="name"
-              placeholder="Enter product name"
+              placeholder="Escribe el nombre del producto"
               className="col-span-3"
               value={formData.name}
               onChange={(e) =>
@@ -90,11 +90,11 @@ export default function AddProductDialog({
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="sku" className="text-right">
-              SKU
+              Codigo de Barra
             </Label>
             <Input
               id="sku"
-              placeholder="Enter SKU"
+              placeholder="Digita el codigo de barra del producto"
               className="col-span-3"
               value={formData.sku}
               onChange={(e) =>
@@ -104,7 +104,7 @@ export default function AddProductDialog({
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="quantity" className="text-right">
-              Quantity
+              Cantidad
             </Label>
             <Input
               id="quantity"
@@ -119,7 +119,7 @@ export default function AddProductDialog({
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="price" className="text-right">
-              Price
+              Precio
             </Label>
             <Input
               id="price"
@@ -135,7 +135,7 @@ export default function AddProductDialog({
           </div>
         </div>
         <div className="flex justify-end">
-          <Button onClick={handleSubmit}>Save</Button>
+          <Button onClick={handleSubmit}>Guardar</Button>
         </div>
       </DialogContent>
     </Dialog>

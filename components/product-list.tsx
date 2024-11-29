@@ -29,26 +29,26 @@ export function ProductList() {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead>Name</TableHead>
-              <TableHead>SKU</TableHead>
-              <TableHead>Quantity</TableHead>
-              <TableHead>Price</TableHead>
-              <TableHead>Status</TableHead>
-              <TableHead className="text-right">Actions</TableHead>
+              <TableHead>Barcode</TableHead>
+              <TableHead>Nombre</TableHead>
+              <TableHead>Cantidad</TableHead>
+              <TableHead>Precio</TableHead>
+              <TableHead>Estado</TableHead>
+              <TableHead className="text-right">Utilidades</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {products.map((product) => (
               <TableRow key={product.id}>
-                <TableCell className="font-medium">{product.name}</TableCell>
                 <TableCell>{product.sku}</TableCell>
+                <TableCell className="font-medium">{product.name}</TableCell>
                 <TableCell>{product.quantity}</TableCell>
                 <TableCell>${product.price.toFixed(2)}</TableCell>
                 <TableCell>
                   <Badge
-                    variant={product.status === "In Stock" ? "default" : "destructive"}
+                    variant={product.status === "En Stock" ? "default" : "destructive"}
                   >
-                    {product.status === "In Stock" ? "In Stock" : "Low Stock"}
+                    {product.status === "En Stock" ? "En Stock" : "Stock Bajo"}
                   </Badge>
                 </TableCell>
                 <TableCell className="text-right space-x-2">

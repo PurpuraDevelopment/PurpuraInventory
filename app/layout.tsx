@@ -8,7 +8,7 @@ import Navbar from "@/components/navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Inventory Manager",
+  title: "Purpura Inventory",
   description: "Simple inventory management for small businesses",
 };
 
